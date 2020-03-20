@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.0 AS build-env
 WORKDIR /app
-EXPOSE 80
+EXPOSE 5000
 
 # Copy csproj and restore as distinct layers
 COPY *.csproj ./
