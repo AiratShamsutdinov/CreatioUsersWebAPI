@@ -22,10 +22,8 @@ namespace CreatioUsersWebApi
 			Configuration = configuration;
 			ConnectionString = $"Server={Configuration["Server"]};" +
 			                   $"Database={Configuration["Database"]};" +
-			                   $"Integrated Security=SSPI;" +
-					   //$"User id={Configuration["UserId"]};" +
-					   //$"Password={Configuration["Password"]};" +
-			                   $"Trusted_Connection={Configuration["TrustedConnection"]};";
+							   $"User id={Configuration["UserId"]};" +
+							   $"Password={Configuration["Password"]};";
 		}
 
 		/// <summary>
