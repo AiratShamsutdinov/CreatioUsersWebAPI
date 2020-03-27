@@ -52,7 +52,7 @@ namespace CreatioUsersWebApi
 				options.AddPolicy(CorsPolicyName,
 					builder =>
 					{
-						builder.WithOrigins("http://localhost:8080")
+						builder.WithOrigins("http://172.30.119.243:8080")
 							.AllowAnyHeader()
 							.AllowAnyMethod();
 					});
