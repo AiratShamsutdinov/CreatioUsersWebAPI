@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using CreatioUsersWebApi.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,7 @@ namespace CreatioUsersWebApi.Controllers
 	[Produces("application/json")]
 	[ApiController]
 	[Route("api/[controller]")]
+	[EnableCors("CorsPolicy")]
 	public class UsersController : ControllerBase
 	{
 		private readonly CreatioUserDbContext _dbContext;
